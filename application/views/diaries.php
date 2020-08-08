@@ -58,7 +58,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <?php echo $row['date']?>
                 </div>
                 <div class="clear"></div>
-                <?php endforeach;}?>
+                <?php endforeach;}?><br />&nbsp&nbsp
+                <font color="blue" size="4"><?php echo $this->pagination->create_links();?></font>
             </div>
             <!--时光 end-->
         </div>

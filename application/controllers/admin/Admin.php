@@ -54,8 +54,8 @@ class Admin extends CI_Controller
 
         }else{
 
-            $username = $this->input->post('username');
-            $password = $this->input->post('password');
+            $username = $this->security->xss_clean($this->input->post('username'));//XSS攻击防护
+            $password = $this->security->xss_clean($this->input->post('password'));
 
             if ($this->admin_model->login($username, $password))
             {

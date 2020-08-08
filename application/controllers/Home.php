@@ -20,7 +20,7 @@ class Home extends CI_Controller
         $this->load->view('home', $data);//加载视图
     }
 
-    public function article($id)
+    public function article($id)//文章详情页
     {
         $data['rows'] = $this->home_model->article($id);
         $this->load->view('article', $data);
@@ -33,13 +33,25 @@ class Home extends CI_Controller
 
     public function tweets()
     {
-        $data['rows'] = $this->home_model->tweets();
+        $config['base_url']='http://cc.com:89/home/tweets';
+        $config['total_rows']=$this->db->get("tweets")->num_rows();
+        $config['per_page']=10;
+        $config['num_links']=100;
+        $this->pagination->initialize($config);
+
+        $data['rows'] = $this->home_model->tweets($config);
         $this->load->view('tweets', $data);
     }
 
     public function diaries()
     {
-        $data['rows'] = $this->home_model->diaries();
+        $config['base_url']='http://cc.com:89/home/diaries';
+        $config['total_rows']=$this->db->get("diaries")->num_rows();
+        $config['per_page']=8;
+        $config['num_links']=100;
+        $this->pagination->initialize($config);
+
+        $data['rows'] = $this->home_model->diaries($config);
         $this->load->view('diaries', $data);
     }
 
@@ -50,13 +62,25 @@ class Home extends CI_Controller
 
     public function learn()
     {
-        $data['rows'] = $this->home_model->learn();
+        $config['base_url']='http://cc.com:89/home/learn';
+        $config['total_rows']=$this->db->get("article")->num_rows();
+        $config['per_page']=8;
+        $config['num_links']=100;
+        $this->pagination->initialize($config);
+
+        $data['rows'] = $this->home_model->learn($config);
         $this->load->view('learn', $data);
     }
 
     public function guestbook()
     {
-        $data['rows'] = $this->home_model->guestbook();
+        $config['base_url']='http://cc.com:89/home/guestbook';
+        $config['total_rows']=$this->db->get("guestbook")->num_rows();
+        $config['per_page']=8;
+        $config['num_links']=100;
+        $this->pagination->initialize($config);
+
+        $data['rows'] = $this->home_model->guestbook($config);
         $this->load->view('guestbook', $data);
     }
 
@@ -68,8 +92,8 @@ class Home extends CI_Controller
         }
         elseif ($this->input->post('name') && $this->input->post('content') && $this->input->post('date') != null)
         {
-            $name = $this->input->post('name');
-            $content = $this->input->post('content');
+            $name = $this->security->xss_clean($this->input->post('name'));//XSS攻击防护
+            $content = $this->security->xss_clean($this->input->post('content'));
             $date = $this->input->post('date');
             $result = $this->home_model->message($name, $content, $date);
 

@@ -40,7 +40,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--content start-->
 <div id="content">
     <!--left-->
-    <div class="left" id="guestbook">
+    <div class="left" id="c_left">
         <div class="weizi">
             <div class="wz_text">当前位置：首页><h1>留言板</h1></div>
         </div>
@@ -49,13 +49,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             有什么想对我说的嘛？&nbsp&nbsp<a href="<?php echo base_url('home/message');?>">给我留言</a>
             <?php if (isset($rows)) { foreach ($rows as $row):?>
             <h4><font color="#ff69b4"><br/>
-                <?php echo $row['name']?><br/>
-                <?php echo $row['content']?><br/>
-                <?php echo $row['date']?>
+                    &nbsp&nbsp<?php echo $row['name']?><br/>
+                    &nbsp&nbsp<?php echo $row['content']?><br/>
+                    &nbsp&nbsp<?php echo $row['date']?>
             </font></h4>
-            <?php endforeach;}?>
+            <?php endforeach;}?><br />&nbsp&nbsp
+            <font color="blue" size="4"><?php echo $this->pagination->create_links();?></font>
         </div>
     </div>
+
     <!--end left -->
     <!--right-->
     <div class="right" id="c_right">

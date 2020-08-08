@@ -38,7 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--content start-->
 <div id="content">
     <!--left-->
-    <div class="left" id="guestbook">
+    <div class="left" id="c_left">
         <div class="weizi">
             <div class="wz_text">当前位置：首页><h1>留言板</h1></div>
         </div>
@@ -47,9 +47,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             有什么想对我说的嘛？
             <?php if (isset($rows)) { foreach ($rows as $row):?>
                 <h4><font color="#ff69b4"><br/>
-                    <?php echo $row['name']?><br/>
-                    <?php echo $row['content']?><br/>
-                    <?php echo $row['date']?>
+                        &nbsp&nbsp<?php echo $row['name']?><br/>
+                        &nbsp&nbsp<?php echo $row['content']?><br/>
+                        &nbsp&nbsp<?php echo $row['date']?>
                     <a><?php echo anchor('admin/admin/delete_guestbook/'.$row['id'],'删除留言')?></a>
                 </font></h4>
             <?php endforeach;}?>

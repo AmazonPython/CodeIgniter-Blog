@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <table bgcolor="#FFFFFF">
             <tr>
                 <td>
-                    <input type=text name=keyword size=11 value="">
+                    <input type=text name=keyword size=11 value="" placeholder="输入关键字">
                     <input type=hidden name=ie value=UTF8>
                     <input type=hidden name=oe value=UTF8>
                     <input type=hidden name=hl value=zh-CN>
@@ -135,7 +135,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--content end-->
 <!--footer start-->
 <div id="footer">
-    <p>Design by：Nova <?php echo date('Y-m-d');?></p>
+    <p>Design by：Nova &nbsp&nbsp<?php echo date('Y-m-d');?><br />Development based on CodeIgniter</p>
 </div>
 <script type="text/javascript" src="<?php echo base_url();?>static/js/jquery1.42.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>static/js/jquery.SuperSlide.2.1.1.js"></script>
