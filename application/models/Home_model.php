@@ -15,7 +15,7 @@ class Home_model extends CI_Model{
 
         //调用article表,按id倒序排列并显示6条数据
         $data = $this->db->from('article')->order_by('id', 'desc')->limit(8)->get();
-        return $data->result();//单结果标准查询（对象形式）
+        return $data->result();
     }
 
     public function article($id)
@@ -26,25 +26,25 @@ class Home_model extends CI_Model{
 
     public function tweets($config)
     {
-        $query = $this->db->get('tweets', $config['per_page'],$this->uri->segment(3));
-        return $query->result_array();//单结果标准查询（数组形式）
+        $query = $this->db->get('tweets', $config['per_page'], $this->uri->segment(3));
+        return $query->result_array();
     }
 
     public function diaries($config)
     {
-        $query = $this->db->get('diaries', $config['per_page'],$this->uri->segment(3));
+        $query = $this->db->get('diaries', $config['per_page'], $this->uri->segment(3));
         return $query->result_array();
     }
 
     public function learn($config)
     {
-        $query = $this->db->get('article', $config['per_page'],$this->uri->segment(3));
+        $query = $this->db->get('article', $config['per_page'], $this->uri->segment(3));
         return $query->result_array();
     }
 
     public function guestbook($config)
     {
-        $query = $this->db->get('guestbook', $config['per_page'],$this->uri->segment(3));
+        $query = $this->db->get('guestbook', $config['per_page'], $this->uri->segment(3));
         return $query->result_array();
     }
 

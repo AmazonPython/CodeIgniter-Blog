@@ -259,7 +259,7 @@ class Admin extends CI_Controller
         if ($_SESSION['logged_in'] == TRUE)
         {
             $article = $this->db->get_where('article', array('id' => $id))->row();
-            $this->load->view('admin/edit_article',array('article' => $article));
+            $this->load->view('admin/edit_article', array('article' => $article));
 
         }else{
             redirect('admin/admin/login');
@@ -284,7 +284,7 @@ class Admin extends CI_Controller
         if ($_SESSION['logged_in'] == TRUE)
         {
             $diaries = $this->db->get_where('diaries', array('id' => $id))->row();
-            $this->load->view('admin/edit_diaries',array('diaries' => $diaries));
+            $this->load->view('admin/edit_diaries', array('diaries' => $diaries));
 
         }else{
             redirect('admin/admin/login');
