@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--header start-->
 <div id="header">
     <h1>个人博客</h1>
-    <p>青春是打开了,就合不上的书。人生是踏上了，就回不了头的路，爱情是扔出了，就收不回的赌注。</p>
+    <p>就做一阵风吧，有温柔也有英勇。</p>
 </div>
 <!--header end-->
 <!--nav-->

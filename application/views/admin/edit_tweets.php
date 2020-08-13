@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>更新日记</title>
+    <title>更新说说</title>
     <link rel="stylesheet" href="<?php echo base_url();?>static/admin/css/login.css"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/admin/css/article.css">
     <link rel="icon" href="<?php echo base_url();?>static/images/favicon/favicon.ico">

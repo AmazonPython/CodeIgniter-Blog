@@ -18,6 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <h1 style="margin: 0; text-align: center;"><font>Hi, Nova 👋</font></h1>
         <a href="<?= base_url('admin/admin/add_diaries')?>">写日记</a>
         <a href="<?= base_url('admin/admin/add_article')?>">写文章</a>
+        <a href="<?= base_url('admin/admin/article')?>">后台首页</a>
         <a href="<?= base_url('admin/admin/logout')?>">登出</a>
 
         <form action="<?php echo base_url('admin/admin/add_tweets');?>" method="post">

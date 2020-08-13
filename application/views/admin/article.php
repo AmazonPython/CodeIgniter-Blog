@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--header start-->
 <div id="header">
     <h1><font style="vertical-align: inherit;">Hi, Nova 👋</font></h1>
-    <p>青春是打开了,就合不上的书。人生是踏上了，就回不了头的路，爱情是扔出了，就收不回的赌注。</p>
+    <p>就做一阵风吧，有温柔也有英勇。</p>
 </div>
 <!--header end-->
 <!--nav-->
@@ -30,6 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <li><a href="<?php echo base_url('admin/admin/diaries');?>">个人日记</a></li>
         <li><a href="<?php echo base_url('admin/admin/photos');?>">相册展示</a></li>
         <li><a href="<?php echo base_url('admin/admin/guestbook');?>">留言板</a></li>
+        <li><a href="<?php echo base_url('admin/admin/add_article');?>">添加文章</a></li>
         <div class="clear"></div>
     </ul>
 </div>
