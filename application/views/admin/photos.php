@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="msvalidate.01" content="3ED833EEEC8B466015F352CA0CEC159F" />
     <meta name="baidu-site-verification" content="Een7k8JYLQ" />
     <meta name="keywords" content="Luna, Nova, Photos, What's past is prologue, 凡是过往，皆为序章"/>
-    <meta name="description" content="普通上班族的图片，凡是过往，皆为序章(★≧▽^))★☆"/>
+    <meta name="description" content="普通上班族的图片，凡是过往，皆为序章。(★≧▽^))★☆"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/index.css"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/style.css"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/photo.css"/>
@@ -44,22 +44,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="w960 mt_10">
                 <div class="w650">
                     <ul class="tips" id="wf-main" style="display:none" >
-                        <li class="wf-cld"><img src="<?php echo base_url(); ?>static/images/photo/6.jpg" alt="" /></li>
-                        <li class="wf-cld"><img src="<?php echo base_url(); ?>static/images/photo/1.jpg" alt="" /></li>
-                        <li class="wf-cld"><img src="<?php echo base_url(); ?>static/images/photo/2.jpg" alt="" /></li>
-                        <li class="wf-cld"><img src="<?php echo base_url(); ?>static/images/photo/3.jpg" alt="" /></li>
-                        <li class="wf-cld"><img src="<?php echo base_url(); ?>static/images/photo/4.jpg" alt="" /></li>
-                        <li class="wf-cld"><img src="<?php echo base_url(); ?>static/images/photo/5.jpg" alt="" /></li>
-                        <li class="wf-cld"><img src="<?php echo base_url(); ?>static/images/photo/6.jpg" alt="" /></li>
-                        <li class="wf-cld"><img src="<?php echo base_url(); ?>static/images/photo/5.jpg" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" src="<?php echo base_url(); ?>static/images/photo/4.jpg" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" src="<?php echo base_url(); ?>static/images/photo/3.jpg" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" src="<?php echo base_url(); ?>static/images/photo/2.jpg" width="197" height="273" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" src="<?php echo base_url(); ?>static/images/photo/1.jpg" width="197" height="273" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" src="<?php echo base_url(); ?>static/images/photo/6.jpg" width="197" height="273" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" src="<?php echo base_url(); ?>static/images/photo/5.jpg" width="197" height="273" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" src="<?php echo base_url(); ?>static/images/photo/4.jpg" width="197" height="273" alt="" /></li>
-                        <li class="wf-cld"><img rel="lazy" src="<?php echo base_url(); ?>static/images/photo/3.jpg" width="197" height="273" alt="" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/6.jpg" width="197" height="273" alt="照片墙" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/1.jpg" width="197" height="273" alt="照片墙" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/2.jpg" width="197" height="273" alt="照片墙" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/3.jpg" width="197" height="273" alt="照片墙" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/4.jpg" width="197" height="273" alt="照片墙" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/5.jpg" width="197" height="273" alt="照片墙" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/6.jpg" width="197" height="273" alt="照片墙" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/5.jpg" width="197" height="273" alt="照片墙" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/4.jpg" width="197" height="273" alt="照片墙" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/3.jpg" width="197" height="273" alt="照片墙" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/2.jpg" width="197" height="273" alt="照片墙" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/1.jpg" width="197" height="273" alt="照片墙" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/2.jpg" width="197" height="273" alt="照片墙" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/3.jpg" width="197" height="273" alt="照片墙" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/4.jpg" width="197" height="273" alt="照片墙" /></li>
+                        <li class="wf-cld"><img rel="lazy" lazy_src="<?php echo base_url(); ?>static/images/photo/5.jpg" width="197" height="273" alt="照片墙" /></li>
                     </ul>
                 </div>
             </div>

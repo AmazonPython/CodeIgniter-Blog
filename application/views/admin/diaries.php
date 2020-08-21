@@ -49,7 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="shiguang animated bounceIn">
                 <?php if (isset($rows)) { foreach ($rows as $row):?>
                     <div class="left sg_ico">
-                        <img src="<?php echo base_url(); ?>static/images/my_1.jpg" width="120" height="120" alt=""/>
+                        <img src="<?php echo base_url(); ?>static/images/my_1.jpg" width="120" height="120" alt="日记图标"/>
                     </div>
                     <div class="right sg_text">
                         <img src="<?php echo base_url(); ?>static/images/left.png" width="13" height="16" alt="左图标"/>

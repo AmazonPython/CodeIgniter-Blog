@@ -47,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="wz">
                     <h3><?php echo $row->id.' '.$row->title;?></h3>
                     <dl>
-                        <dt><img src="<?php echo base_url();?>static/images/s2.jpg" width="200" height="123" alt=""></dt>
+                        <dt><img src="<?php echo base_url();?>static/images/s2.jpg" width="200" height="123" alt="文章图片"></dt>
                         <dd>
                             <p class="dd_text_1"><?php echo $row->content;?></p>
                             <p class="dd_text_2">
