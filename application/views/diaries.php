@@ -5,10 +5,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>个人日记 - Nova's Blog</title>
+    <title>Nova's blog - 个人日记</title>
     <meta name="msvalidate.01" content="3ED833EEEC8B466015F352CA0CEC159F" />
     <meta name="baidu-site-verification" content="Een7k8JYLQ" />
-    <meta name="keywords" content="Luna Nova's Diaries"/>
+    <meta name="keywords" content="Luna, Nova, Diaries, 普通上班族的的个人日记"/>
     <meta name="description" content="普通上班族的的个人日记__〆(￣ー￣ )"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/index.css"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/style.css"/>
@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body id="diaries">
 <!--header start-->
 <div id="header">
-    <h1>个人博客</h1>
+    <h1>某普通上班族的个人博客</h1>
     <p>就做一阵风吧，有温柔也有英勇。</p>
 </div>
 <!--header end-->

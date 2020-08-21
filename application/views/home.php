@@ -5,10 +5,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Nova's Blog - 某普通上班族的博客</title>
+    <title>Nova's blog - 某普通上班族的博客</title>
     <meta name="baidu-site-verification" content="Een7k8JYLQ" />
-    <meta name="keywords" content="Luna Nova's Blog"/>
-    <meta name="description" content="Luna Nova - 想养一只普通猫咪的普通上班族(=ↀωↀ=)"/>
+    <meta name="keywords" content="Luna, Nova, blog, 某普通上班族的博客, 编程, 软件开发, 程序员, 教程, Computer, PHP, Python, Learn to program"/>
+    <meta name="description" content="Luna Nova - 想养一只普通猫咪的普通上班族，写写互联网技术和文艺文章，偶尔发发牢骚，卖卖萌(=ↀωↀ=)"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/index.css"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/style.css"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/background.css"/>
@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body id="home">
 <!--header start-->
 <div id="header">
-    <h1>个人博客</h1>
+    <h1>某普通上班族的个人博客</h1>
     <p>就做一阵风吧，有温柔也有英勇。</p>
 
     <form class="search" action="<?php echo base_url('home/search')?>" method=post>

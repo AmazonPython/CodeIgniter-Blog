@@ -5,11 +5,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>学无止境 - Nova's Blog</title>
+    <title>Nova's blog - 学无止境</title>
     <meta name="msvalidate.01" content="3ED833EEEC8B466015F352CA0CEC159F" />
     <meta name="baidu-site-verification" content="Een7k8JYLQ" />
-    <meta name="keywords" content="Luna Nova's Learning journey"/>
-    <meta name="description" content="普通上班族的学习之旅ฅ( ＞ω＜)ฅ"/>
+    <meta name="keywords" content="Luna, Nova, Learning journey"/>
+    <meta name="description" content="普通上班族的学习之旅，学习各种好玩有趣的东西ฅ( ＞ω＜)ฅ"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/index.css"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/style.css"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/background.css"/>
@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body id="learnjourney">
 <!--header start-->
 <div id="header">
-    <h1>个人博客</h1>
+    <h1>某普通上班族的个人博客</h1>
     <p>就做一阵风吧，有温柔也有英勇。</p>
 </div>
 <!--header end-->

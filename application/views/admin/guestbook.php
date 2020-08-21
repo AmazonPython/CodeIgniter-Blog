@@ -5,11 +5,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>留言板 - Nova's Blog</title>
+    <title>Nova's blog - 留言板</title>
     <meta name="msvalidate.01" content="3ED833EEEC8B466015F352CA0CEC159F" />
     <meta name="baidu-site-verification" content="Een7k8JYLQ" />
-    <meta name="keywords" content="Luna Nova's Guestbook"/>
-    <meta name="description" content="普通上班族的留言板ฅ( ̳• ◡ • ̳)ฅ"/>
+    <meta name="keywords" content="Luna, Nova, Guestbook, Friends"/>
+    <meta name="description" content="普通上班族的留言板，是什么Friends来我这里留言了呢ฅ( ̳• ◡ • ̳)ฅ"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/index.css"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/style.css"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/background.css"/>
