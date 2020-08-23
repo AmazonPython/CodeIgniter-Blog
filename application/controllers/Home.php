@@ -33,10 +33,10 @@ class Home extends CI_Controller
 
     public function tweets()
     {
-        $config['base_url']='http://cc.com:89/home/tweets';
-        $config['total_rows']=$this->db->get("tweets")->num_rows();
-        $config['per_page']=10;
-        $config['num_links']=100;
+        $config['base_url'] = 'http://cc.com:89/home/tweets';
+        $config['total_rows'] = $this->db->get("tweets")->num_rows();
+        $config['per_page'] = 10;
+        $config['num_links'] = 100;
         $this->pagination->initialize($config);
 
         $data['rows'] = $this->home_model->tweets($config);
@@ -45,10 +45,10 @@ class Home extends CI_Controller
 
     public function diaries()
     {
-        $config['base_url']='http://cc.com:89/home/diaries';
-        $config['total_rows']=$this->db->get("diaries")->num_rows();
-        $config['per_page']=8;
-        $config['num_links']=100;
+        $config['base_url'] = 'http://cc.com:89/home/diaries';
+        $config['total_rows'] = $this->db->get("diaries")->num_rows();
+        $config['per_page'] = 8;
+        $config['num_links'] = 100;
         $this->pagination->initialize($config);
 
         $data['rows'] = $this->home_model->diaries($config);
@@ -62,10 +62,10 @@ class Home extends CI_Controller
 
     public function learn()
     {
-        $config['base_url']='http://cc.com:89/home/learn';
-        $config['total_rows']=$this->db->get("article")->num_rows();
-        $config['per_page']=8;
-        $config['num_links']=100;
+        $config['base_url'] = 'http://cc.com:89/home/learn';
+        $config['total_rows'] = $this->db->get("article")->num_rows();
+        $config['per_page'] = 8;
+        $config['num_links'] = 100;
         $this->pagination->initialize($config);
 
         $data['rows'] = $this->home_model->learn($config);
@@ -74,10 +74,10 @@ class Home extends CI_Controller
 
     public function guestbook()
     {
-        $config['base_url']='http://cc.com:89/home/guestbook';
-        $config['total_rows']=$this->db->get("guestbook")->num_rows();
-        $config['per_page']=8;
-        $config['num_links']=100;
+        $config['base_url'] = 'http://cc.com:89/home/guestbook';
+        $config['total_rows'] = $this->db->get("guestbook")->num_rows();
+        $config['per_page'] = 8;
+        $config['num_links'] = 100;
         $this->pagination->initialize($config);
 
         $data['rows'] = $this->home_model->guestbook($config);
