@@ -6,8 +6,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
     <meta charset="UTF-8">
     <title>About Nova - 关于我</title>
-    <meta name="msvalidate.01" content="3ED833EEEC8B466015F352CA0CEC159F" />
-    <meta name="baidu-site-verification" content="Een7k8JYLQ" />
+    <meta name="msvalidate.01" content="" />
+    <meta name="baidu-site-verification" content="" />
     <meta name="keywords" content="Luna, Nova, Information, 某普通上班族的的个人简介"/>
     <meta name="description" content="About Nova, Ordinary office worker, 某普通上班族的的个人简介( =ノωヽ=)"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/index.css"/>
