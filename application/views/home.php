@@ -8,6 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <title>Nova's blog - 某普通上班族的博客</title>
     <meta name="google-site-verification" content="" />
     <meta name="baidu-site-verification" content="" />
+    <meta name="author" content="LunaNova">
     <meta name="keywords" content="Luna, Nova, blog, 某普通上班族的博客, 编程, 软件开发, 程序员, 教程, Computer, PHP, Python, Learn to program"/>
     <meta name="description" content="Luna Nova - 想养一只普通猫咪的普通上班族，写写互联网技术和文艺文章，偶尔发发牢骚，卖卖萌(=ↀωↀ=)"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/index.css"/>

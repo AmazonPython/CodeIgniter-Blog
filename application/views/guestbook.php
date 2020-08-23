@@ -8,6 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <title>Nova's blog - 留言板</title>
     <meta name="msvalidate.01" content="" />
     <meta name="baidu-site-verification" content="" />
+    <meta name="author" content="LunaNova">
     <meta name="keywords" content="Luna, Nova, Guestbook, Friends"/>
     <meta name="description" content="普通上班族的留言板，是什么Friends来我这里留言了呢ฅ( ̳• ◡ • ̳)ฅ"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/index.css"/>

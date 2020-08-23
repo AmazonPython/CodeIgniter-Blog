@@ -11,9 +11,9 @@ class Home_model extends CI_Model{
 
     public function home()
     {
-        //$query = $this->db->query('select * from article order by id desc limit 0,5');//加载数据表
+        //$query = $this->db->query('select * from article order by id desc limit 0,8');//加载数据表
 
-        //调用article表,按id倒序排列并显示6条数据
+        //调用article表,按id倒序排列并显示8条数据
         $data = $this->db->from('article')->order_by('id', 'desc')->limit(8)->get();
         return $data->result();
     }

@@ -3,10 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends CI_Controller
 {
-    /**
-     * This is default constructor of the class
-     */
-    public function __construct()//定义构造函数__construct() 调用父类CI_Controller
+    //This is default constructor of the class
+    public function __construct()
     {
         parent::__construct();
         $this->load->helper('url');//加载URL辅助函数返回site_url()
