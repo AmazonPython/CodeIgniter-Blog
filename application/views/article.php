@@ -6,8 +6,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
     <meta charset="UTF-8">
     <title>Nova's blog - 文章详情</title>
-    <meta name="msvalidate.01" content="3ED833EEEC8B466015F352CA0CEC159F" />
-    <meta name="baidu-site-verification" content="Een7k8JYLQ" />
+    <meta name="msvalidate.01" content="" />
+    <meta name="baidu-site-verification" content="" />
     <meta name="keywords" content="Luna, Nova, Articles, 某普通上班族的博客, 编程, 软件开发, 程序员, 教程, Computer, PHP, Python, Learn to program"/>
     <meta name="description" content="普通上班族写的的文章，内容涵盖互联网、计算机原理、编程教程与文艺文章，偶尔发发牢骚，卖卖萌o(^・x・^)o"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/index.css"/>
