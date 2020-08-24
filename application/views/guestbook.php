@@ -49,11 +49,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="g_content">
             有什么想对我说的嘛？&nbsp&nbsp<a href="<?php echo base_url('home/message');?>">给我留言</a>
             <?php if (isset($rows)) { foreach ($rows as $row):?>
-            <h4><font color="#ff69b4"><br/>
-                    &nbsp&nbsp<?php echo $row['name']?><br/>
-                    &nbsp&nbsp<?php echo $row['content']?><br/>
-                    &nbsp&nbsp<?php echo $row['date']?>
-            </font></h4>
+            <h3>
+                <font color="#ff69b4">
+                    <br />&nbsp&nbsp<?php echo $row['name']?>
+                    &nbsp&nbsp<?php echo $row['date']?><br />
+                    &nbsp&nbsp<?php echo $row['content']?>
+                </font>
+            </h3>
             <?php endforeach;}?><br />&nbsp&nbsp
             <font color="blue" size="4"><?php echo $this->pagination->create_links();?></font>
         </div>

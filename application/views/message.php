@@ -17,11 +17,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <h1 style="margin: 0; text-align: center;"><font>你好，旅行者。 👋</font></h1>
 
         <form action="<?php echo base_url('home/message');?>" method="post">
-            <label><input type="text" name="name" placeholder="你的名字是？"/></label>
+            <label><input type="text" name="name" maxlength="15" placeholder="你的名字是？" required/></label>
 
-            <textarea class="add" type="text" name="content" placeholder="有什么想对我说的嘛？"></textarea>
+            <textarea class="add" type="text" name="content" maxlength="255" placeholder="有什么想对我说的嘛？" required></textarea>
 
-            <label><input type="text" name="date" placeholder="date" value="<?php echo date('Y-m-d H:i:s');?>"/></label>
+            <label><input type="text" name="date" readonly="readonly" value="<?php echo date('Y-m-d H:i:s');?>"/></label>
 
             <input type="submit" name="submit" value="ヽ( =ノωヽ=)ﾉstart"/>
 
