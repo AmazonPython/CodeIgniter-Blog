@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Nova's blog - 文章详情</title>
+    <title>Nova's blog - <?php echo $rows->title;?></title>
     <meta name="msvalidate.01" content="" />
     <meta name="baidu-site-verification" content="" />
     <meta name="author" content="LunaNova">
