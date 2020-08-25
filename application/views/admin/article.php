@@ -63,7 +63,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="clear"></div>
                     </dl>
                 </div>
-                <!--wz end--><?php endforeach;}?>
+                <!--wz end--><?php endforeach;}?><br />&nbsp&nbsp
+            <font color="blue" size="4"><?php echo $this->pagination->create_links();?></font>
         </div>
     </div>
     <!--left end-->

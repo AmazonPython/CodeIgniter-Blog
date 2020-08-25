@@ -44,17 +44,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="weizi">
             <div class="wz_text">当前位置：首页><h1>留言板</h1></div>
         </div>
-
         <div class="g_content">
             有什么想对我说的嘛？
             <?php if (isset($rows)) { foreach ($rows as $row):?>
-                <h4><font color="#ff69b4"><br/>
-                        &nbsp&nbsp<?php echo $row['name']?><br/>
-                        &nbsp&nbsp<?php echo $row['content']?><br/>
-                        &nbsp&nbsp<?php echo $row['date']?>
-                    <a><?php echo anchor('admin/admin/delete_guestbook/'.$row['id'],'删除留言')?></a>
-                </font></h4>
-            <?php endforeach;}?>
+                <h3>
+                    <font color="#ff69b4">
+                        <br />&nbsp&nbsp<?php echo $row['name']?>
+                        &nbsp&nbsp<?php echo $row['date']?><br />
+                        &nbsp&nbsp<?php echo $row['content']?><br /><br />
+                        <a><?php echo anchor('admin/admin/delete_guestbook/'.$row['id'],'删除留言')?></a>
+                        <a style="padding-left: 5%;">
+                            <?php echo anchor('admin/admin/reply/'.$row['id'], 'Reply');?>
+                        </a><br /><br />
+                    </font>
+                </h3>
+            <?php endforeach;}?><br />&nbsp&nbsp
+            <font color="blue" size="4"><?php echo $this->pagination->create_links();?></font>
         </div>
     </div>
     <!--end left -->

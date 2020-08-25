@@ -8,6 +8,7 @@ class Admin extends CI_Controller
         parent::__construct();
         $this->load->model('admin_model');
         $this->load->helper('url');
+        $this->load->library('pagination');
     }
 
     /**
@@ -102,26 +103,88 @@ class Admin extends CI_Controller
      */
     public function article()
     {
-        $data['rows'] = $this->admin_model->article();
+        $config['base_url'] = 'http://cc.com:89/admin/admin/article';
+        $config['total_rows'] = $this->db->get("article")->num_rows();
+        $config['per_page'] = 8;
+        $config['num_links'] = 100;
+        $this->pagination->initialize($config);
+
+        $data['rows'] = $this->admin_model->article($config);
         $this->load->view('admin/article', $data);
     }
 
     public function diaries()
     {
-        $data['rows'] = $this->admin_model->diaries();
+        $config['base_url'] = 'http://cc.com:89/admin/admin/diaries';
+        $config['total_rows'] = $this->db->get("diaries")->num_rows();
+        $config['per_page'] = 8;
+        $config['num_links'] = 100;
+        $this->pagination->initialize($config);
+
+        $data['rows'] = $this->admin_model->diaries($config);
         $this->load->view('admin/diaries', $data);
     }
 
     public function tweets()
     {
-        $data['rows'] = $this->admin_model->tweets();
+        $config['base_url'] = 'http://cc.com:89/admin/admin/tweets';
+        $config['total_rows'] = $this->db->get("tweets")->num_rows();
+        $config['per_page'] = 10;
+        $config['num_links'] = 100;
+        $this->pagination->initialize($config);
+
+        $data['rows'] = $this->admin_model->tweets($config);
         $this->load->view('admin/tweets', $data);
     }
 
     public function guestbook()
     {
-        $data['rows'] = $this->admin_model->guestbook();
+        $config['base_url'] = 'http://cc.com:89/admin/admin/guestbook';
+        $config['total_rows'] = $this->db->get("guestbook")->num_rows();
+        $config['per_page'] = 8;
+        $config['num_links'] = 100;
+        $this->pagination->initialize($config);
+
+        $data['rows'] = $this->admin_model->guestbook($config);
         $this->load->view('admin/guestbook', $data);
+    }
+
+    public function reply($id)
+    {
+        if ($_SESSION['logged_in'] == TRUE)
+        {
+            $data['rows'] = $this->admin_model->reply($id);
+            $this->load->view('admin/reply', $data);
+        }else{
+            redirect('admin/admin/login');
+        }
+    }
+
+    public function reply_store()
+    {
+        if ($_SESSION['logged_in'] == TRUE)
+        {
+            if ($_POST != True)
+            {
+                $this->load->view('admin/reply');
+            }
+            elseif (
+                $this->input->post('name') &&
+                $this->input->post('content') &&
+                $this->input->post('date') != null
+            ){
+                $name = $this->input->post('name');
+                $content = $this->input->post('content');
+                $date = $this->input->post('date');
+
+                $result = $this->admin_model->reply_store($name, $content, $date);
+                $this->load->view('admin/reply', $result);
+            }else{
+                $this->load->view('admin/reply');
+            }
+        }else{
+            redirect('admin/admin/login');
+        }
     }
 
     public function photos()

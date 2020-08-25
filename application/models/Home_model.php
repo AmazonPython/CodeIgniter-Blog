@@ -26,7 +26,7 @@ class Home_model extends CI_Model{
 
     public function tweets($config)
     {
-        $query = $this->db->get('tweets', $config['per_page'], $this->uri->segment(3));
+        $query = $this->db->order_by('id', 'desc')->get('tweets', $config['per_page'], $this->uri->segment(3));
         return $query->result_array();
     }
 

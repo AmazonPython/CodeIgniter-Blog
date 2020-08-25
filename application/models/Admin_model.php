@@ -73,28 +73,52 @@ class Admin_model extends CI_Model{
     /**
      * 文本显示模块
      */
-    public function article()
+    public function article($config)
     {
-        $data = $this->db->from('article')->order_by('id', 'desc')->get();
+        $data = $this->db->order_by('id', 'desc')->get('article', $config['per_page'], $this->uri->segment(4));
         return $data->result();
     }
 
-    public function diaries()
+    public function diaries($config)
     {
-        $data = $this->db->from('diaries')->order_by('id', 'desc')->get();
+        $data = $this->db->order_by('id', 'desc')->get('diaries', $config['per_page'], $this->uri->segment(4));
         return $data->result_array();
     }
 
-    public function tweets()
+    public function tweets($config)
     {
-        $data = $this->db->from('tweets')->order_by('id', 'desc')->get();
+        $data = $this->db->order_by('id', 'desc')->get('tweets', $config['per_page'], $this->uri->segment(4));
         return $data->result_array();
     }
 
-    public function guestbook()
+    public function guestbook($config)
     {
-        $data = $this->db->from('guestbook')->order_by('id', 'desc')->get();
+        $data = $this->db->get('guestbook', $config['per_page'], $this->uri->segment(4));
         return $data->result_array();
+    }
+
+    public function reply($id)
+    {
+        $data = $this->db->from('guestbook')->where('id=', $id)->get();
+        return $data->result()[0];
+    }
+
+    public function reply_store($name, $content, $date)
+    {
+        if ($this->db->insert('guestbook',array(
+
+            'name' => $name,
+            'content' => $content,
+            'date' => $date
+
+        ) )){
+
+            return $this->db->insert_id() && redirect('admin/admin/guestbook');
+
+        }else{
+            log_message ('error', 'register error-->' . $this->db->last_query());
+            return false;
+        }
     }
 
     public function photos()

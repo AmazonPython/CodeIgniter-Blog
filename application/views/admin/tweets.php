@@ -49,7 +49,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
             <span class="dateview"><?php echo $row['date']?></span>
         </ul>
-    <?php endforeach;}?>
+    <?php endforeach;}?><br />&nbsp&nbsp
+    <font color="blue" size="5"><?php echo $this->pagination->create_links();?></font>
 </div>
 <!--content end-->
 <!--footer-->
