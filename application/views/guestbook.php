@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <h3>
                 <font color="#ff69b4">
                     <br />&nbsp&nbsp<?php echo $row['name']?>
-                    &nbsp&nbsp<?php echo $row['date']?><br />
+                    &nbsp&nbsp&nbsp&nbsp<?php echo $row['date']?><br />
                     &nbsp&nbsp<?php echo $row['content']?>
                 </font>
             </h3>
