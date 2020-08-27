@@ -36,6 +36,12 @@ class Home_model extends CI_Model{
         return $query->result_array();
     }
 
+    public function diaries_details($id)//日记详情
+    {
+        $data = $this->db->from('diaries')->where('id=', $id)->get();
+        return $data->result_array()[0];
+    }
+
     public function learn($config)
     {
         $query = $this->db->get('article', $config['per_page'], $this->uri->segment(3));

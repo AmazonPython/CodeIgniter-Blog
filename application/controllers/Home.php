@@ -53,6 +53,12 @@ class Home extends CI_Controller
         $this->load->view('diaries', $data);
     }
 
+    public function diaries_details($id)
+    {
+        $data['rows'] = $this->home_model->diaries_details($id);
+        $this->load->view('diaries_details', $data);
+    }
+
     public function photos()
     {
         $this->load->view('photos');

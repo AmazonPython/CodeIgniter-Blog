@@ -17,8 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/background.css"/>
     <link rel="icon" href="<?php echo base_url();?>static/images/favicon/favicon.ico">
 </head>
-
-<body id="diaries">
+<body>
 <!--header start-->
 <div id="header">
     <h1>某普通上班族的个人博客</h1>
@@ -42,27 +41,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--content start-->
 <div id="content">
     <!--left-->
-    <div class="left" id="riji">
-        <div class="weizi">
-            <div class="wz_text">当前位置：首页><h1>个人日记</h1></div>
-        </div>
-        <div class="rj_content">
-            <!--时光--><?php if (isset($rows)) { foreach ($rows as $row):?>
-            <div class="shiguang animated bounceIn">
-                <div class="left sg_ico">
-                    <img src="<?php echo base_url();?>static/images/my_1.jpg" width="125" height="125" alt="日记图标"/>
-                </div>
-                <div class="right sg_text">
-                    <?php echo $row['content'];?>
-                </div>
-                    <a style="padding-left: 3%;"><?php echo $row['date'];?></a>
-                    <a style="padding-left: 58%;">
-                        <?php echo anchor('home/diaries_details/'.$row['id'], '查看详情')?>
-                    </a>
-                <div class="clear"></div>
+    <div class="left" id="learn">
+        <div class="content_text">
+            <div class="article-title"></div>
+            <a class="article-time">时间：<?php echo $rows['date'];?></a>
+            <a class="article-type">分类：<?php echo $rows['type'];?></a>
+            <div class="article-content">
+                <p><?php echo $rows['content'];?></p>
             </div>
-            <!--时光 end--><?php endforeach;}?>&nbsp&nbsp
-            <font color="blue" size="5"><?php echo $this->pagination->create_links();?></font>
         </div>
     </div>
     <!--end left -->
