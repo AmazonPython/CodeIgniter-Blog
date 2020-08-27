@@ -99,7 +99,7 @@ class Admin extends CI_Controller
     }
 
     /**
-     * 文本显示模块
+     * 文本显示模块 后台主页
      */
     public function article()
     {

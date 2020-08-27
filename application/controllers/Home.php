@@ -24,14 +24,14 @@ class Home extends CI_Controller
         $this->load->view('article', $data);
     }
 
-    public function about()
+    public function about()//关于页面
     {
         $this->load->view('about');
     }
 
     public function tweets()
     {
-        $config['base_url'] = 'http://cc.com:89/home/tweets';
+        $config['base_url'] = 'http://cc.com:89/home/tweets';//输出分页链接
         $config['total_rows'] = $this->db->get("tweets")->num_rows();
         $config['per_page'] = 10;
         $config['num_links'] = 100;

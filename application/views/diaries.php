@@ -50,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <!--时光--><?php if (isset($rows)) { foreach ($rows as $row):?>
             <div class="shiguang animated bounceIn">
                 <div class="left sg_ico">
-                    <img src="<?php echo base_url(); ?>static/images/my_1.jpg" width="125" height="125" alt="日记图标"/>
+                    <img src="<?php echo base_url();?>static/images/my_1.jpg" width="125" height="125" alt="日记图标"/>
                 </div>
                 <div class="right sg_text">
                     <?php echo $row['content']?>
