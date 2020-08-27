@@ -38,16 +38,15 @@ img{display:block;border:0px;}
 .dateview {position:absolute;left:785px;top:15px;width:125px;line-height:35px;background:#5EA51B;border-radius:0 30px;text-align:center;
     color:#fff;font-weight:bold;font-size:14px; }
 /*日记*/
-#content #riji{width:730px;background:#fff;border:1px solid #E0DFDF;}
+#content #riji{width:730px;height: 100%;background:#fff;border:1px solid #E0DFDF;}
 #riji .rj_content{width:710px;margin-top:10px;padding:0 10px;background:#fff;padding-bottom:10px;}
-.rj_content .shiguang{width:710px;height:145px;}
-.rj_content .shiguang .sg_ico{width:120px;height:145px; background:url("../images/line_bg.jpg") 60px 0px repeat-y;
+.rj_content .shiguang{width:710px;height:220px;}
+.rj_content .shiguang .sg_ico{width:125px;height:220px; background:url("../images/line_bg.jpg") 60px 0px repeat-y;
     filter:Alpha(opacity=80);-moz-opacity: 0.8; opacity: 0.8;}
-.rj_content .shiguang .sg_ico img{border-radius:60px;margin-top:10px;}
-.rj_content .shiguang .sg_text{width:530px;height:100px;background:#fff;border:1px solid #E0DFDF;
+.rj_content .shiguang .sg_ico img{border-radius:60px;margin-top:40px;}
+.rj_content .shiguang .sg_text{width: 530px;height: 140px;overflow: hidden;line-height: 30px;background:#fff;border:1px solid #E0DFDF;
     filter:Alpha(opacity=80);-moz-opacity: 0.8; opacity: 0.8;
     margin:10px 10px 0px 10px;position:relative;border-radius:5px;padding:10px;color:#4F4F4F;}
-.rj_content .shiguang .sg_text img{position:absolute;top:40px;left:-14px;z-index:1;}
 /*相册*/
 #content_xc{width:990px;margin:5px auto; background:#fff;}
 #content_xc .weizi{width:990px;height:30px;line-height:30px; background:url("../images/weizi.png") 7px 5px no-repeat; background-color:#fff;

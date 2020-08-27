@@ -45,7 +45,7 @@ class Home extends CI_Controller
     {
         $config['base_url'] = 'http://cc.com:89/home/diaries';
         $config['total_rows'] = $this->db->get("diaries")->num_rows();
-        $config['per_page'] = 8;
+        $config['per_page'] = 5;
         $config['num_links'] = 100;
         $this->pagination->initialize($config);
 

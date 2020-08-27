@@ -46,24 +46,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="wz_text">当前位置：首页><h1>个人日记</h1></div>
         </div>
         <div class="rj_content">
-            <!--时光-->
+            <!--时光--><?php if (isset($rows)) { foreach ($rows as $row):?>
             <div class="shiguang animated bounceIn">
-                <?php if (isset($rows)) { foreach ($rows as $row):?>
-                    <div class="left sg_ico">
-                        <img src="<?php echo base_url(); ?>static/images/my_1.jpg" width="120" height="120" alt="日记图标"/>
-                    </div>
-                    <div class="right sg_text">
-                        <img src="<?php echo base_url(); ?>static/images/left.png" width="13" height="16" alt="左图标"/>
-                        <?php echo $row['content']?><br/><br/>
-                        <?php echo $row['date']?>
-                        <a><?php echo anchor('admin/admin/edit_diaries/'.$row['id'],'更新日记')?></a>
-                        <a><?php echo anchor('admin/admin/delete_diaries/'.$row['id'],'删除日记')?></a>
-                    </div>
-                    <div class="clear"></div>
-                <?php endforeach;}?><br />&nbsp&nbsp
-                <font color="blue" size="4"><?php echo $this->pagination->create_links();?></font>
+                <div class="left sg_ico">
+                    <img src="<?php echo base_url(); ?>static/images/my_1.jpg" width="120" height="120" alt="日记图标"/>
+                </div>
+                <div class="right sg_text">
+                    <?php echo $row['content']?>
+                </div>
+                    <a style="padding-left: 3%"><?php echo $row['date']?></a>
+                    <a style="padding-left: 45%;"><?php echo anchor('admin/admin/edit_diaries/'.$row['id'],'更新日记')?></a>
+                    <a style="padding-left: 5%;"><?php echo anchor('admin/admin/delete_diaries/'.$row['id'],'删除日记')?></a>
+                <div class="clear"></div>
             </div>
-            <!--时光 end-->
+            <!--时光 end--><?php endforeach;}?>&nbsp&nbsp
+            <font color="blue" size="5"><?echo $this->pagination->create_links();?></font>
         </div>
     </div>
     <!--end left -->
