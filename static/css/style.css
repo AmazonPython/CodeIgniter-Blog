@@ -106,5 +106,5 @@ span.bds_more{line-height:16px !important;}
 .article-type{padding-left: 5%;padding-right: 5%;}
 .article-content{
     padding-top: 2%;padding-left: 5%;padding-right: 5%;padding-bottom: 5%;
-    line-height:2;letter-spacing: 1px;text-indent:2em;
+    line-height:2;letter-spacing: 1px;font-size: 16px;
 }
