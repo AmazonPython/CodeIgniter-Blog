@@ -57,7 +57,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <span class="left author">Nova</span>
                             <span class="left sj">时间：<?php echo $row['date'];?></span>
                             <span class="left fl">分类：<?php echo $row['type'];?></span>
-                            <span class="left yd"><?php echo anchor('home/article/'.$row['id'],'阅读全文','class="ReadMore"')?></span>
+                            <span class="left yd">
+                                <?php echo anchor('home/article/' . $row['id'] .'-'. str_replace(' ', '-', $row['title']),'阅读全文','class="ReadMore"')?>
+                            </span>
                         <div class="clear"></div>
                         </p>
                     </dd>

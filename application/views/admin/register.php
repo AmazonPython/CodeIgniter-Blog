@@ -22,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <input type="submit" name="submit" value="Sign up"/>
 
             <label class="redirect">
-                <a href="<?php echo base_url('admin/admin/login');?>">Already have an account? Click to log in!</a>
+                <a href="<?php echo base_url('admin/admin/login');?>">Already have an account? Click to login!</a>
             </label>
 
             <p class="change_link" style="text-align: center"></p>
