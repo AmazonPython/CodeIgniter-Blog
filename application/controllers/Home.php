@@ -31,7 +31,7 @@ class Home extends CI_Controller
 
     public function tweets()
     {
-        $config['base_url'] = 'http://cc.com:89/home/tweets';//输出分页链接
+        $config['base_url'] = 'http://codeigniter-3.1.11.bb/home/tweets';//输出分页链接
         $config['total_rows'] = $this->db->get("tweets")->num_rows();
         $config['per_page'] = 10;
         $config['num_links'] = 100;
@@ -43,7 +43,7 @@ class Home extends CI_Controller
 
     public function diaries()
     {
-        $config['base_url'] = 'http://cc.com:89/home/diaries';
+        $config['base_url'] = 'http://codeigniter-3.1.11.bb/home/diaries';
         $config['total_rows'] = $this->db->get("diaries")->num_rows();
         $config['per_page'] = 5;
         $config['num_links'] = 100;
@@ -66,7 +66,7 @@ class Home extends CI_Controller
 
     public function learn()
     {
-        $config['base_url'] = 'http://cc.com:89/home/learn';
+        $config['base_url'] = 'http://codeigniter-3.1.11.bb/home/learn';
         $config['total_rows'] = $this->db->get("article")->num_rows();
         $config['per_page'] = 8;
         $config['num_links'] = 100;
@@ -78,7 +78,7 @@ class Home extends CI_Controller
 
     public function guestbook()
     {
-        $config['base_url'] = 'http://cc.com:89/home/guestbook';
+        $config['base_url'] = 'http://codeigniter-3.1.11.bb/home/guestbook';
         $config['total_rows'] = $this->db->get("guestbook")->num_rows();
         $config['per_page'] = 8;
         $config['num_links'] = 100;
@@ -96,8 +96,8 @@ class Home extends CI_Controller
         }
         elseif ($this->input->post('name') && $this->input->post('content') && $this->input->post('date') != null)
         {
-            $name = $this->security->xss_clean($this->input->post('name'));//XSS攻击防护
-            $content = $this->security->xss_clean($this->input->post('content'));
+            $name = $this->input->post('name');
+            $content = $this->input->post('content');
             $date = $this->input->post('date');
             $result = $this->home_model->message($name, $content, $date);
 

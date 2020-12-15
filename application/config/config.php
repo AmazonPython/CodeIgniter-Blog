@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $base .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 $config['base_url'] = $base;*/
 
-$config['base_url']	= 'http://cc.com:89/';
+$config['base_url']	= 'http://CodeIgniter-3.1.11.bb/';
 
 /*
 |--------------------------------------------------------------------------
@@ -436,7 +436,7 @@ $config['standardize_newlines'] = FALSE;
 |          for backwards compatibility purposes!
 |
 */
-$config['global_xss_filtering'] = FALSE;
+$config['global_xss_filtering'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------

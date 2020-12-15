@@ -18,24 +18,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 
 <body id="guestbook-color">
-<!--header start-->
-<div id="header">
-    <h1><font style="vertical-align: inherit;">Hi, Nova 👋</font></h1>
-    <p>就做一阵风吧，有温柔也有英勇。</p>
-</div>
-<!--header end-->
 <!--nav-->
-<div id="nav">
-    <ul>
-        <li><a href="<?php echo base_url('admin/admin/article');?>">文章</a></li>
-        <li><a href="<?php echo base_url('admin/admin/tweets');?>">碎言碎语</a></li>
-        <li><a href="<?php echo base_url('admin/admin/diaries');?>">个人日记</a></li>
-        <li><a href="<?php echo base_url('admin/admin/photos');?>">相册展示</a></li>
-        <li><a href="<?php echo base_url('admin/admin/guestbook');?>">留言板</a></li>
-        <li><a href="<?php echo base_url('admin/admin/add_article');?>">添加文章</a></li>
-        <div class="clear"></div>
-    </ul>
-</div>
+<?php $this->load->view('admin/nav');?>
 <!--nav end-->
 <!--content start-->
 <div id="content">
@@ -64,60 +48,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <!--end left -->
     <!--right-->
-    <div class="right" id="c_right">
-        <div class="s_about">
-            <h2>关于博主</h2>
-            <img src="<?php echo base_url();?>static/images/kfc.jpg" width="230" height="230" alt="博主"/>
-            <p>博主：Nova</p>
-            <p>职业：PHP开发工程师</p>
-            <p>简介：响珰珰一粒铜豌豆</p>
-            <p><br /><div class="clear"></div></p>
-        </div>
-        <!--栏目分类-->
-        <div class="lanmubox">
-            <div class="hd">
-                <ul><li>友情链接</li><li>友情链接</li><li class="hd_3">友情链接</li></ul>
-            </div>
-            <div class="bd">
-                <ul>
-                    <li><a href="#" title="">虚位以待</a></li>
-                    <li><a href="#" title="">虚位以待</a></li>
-                    <li><a href="#" title="">虚位以待</a></li>
-                    <li><a href="#" title="">虚位以待</a></li>
-                    <li><a href="#" title="">虚位以待</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#" title="">虚位以待</a></li>
-                    <li><a href="#" title="">虚位以待</a></li>
-                    <li><a href="#" title="">虚位以待</a></li>
-                    <li><a href="#" title="">虚位以待</a></li>
-                    <li><a href="#" title="">虚位以待</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#" title="">虚位以待</a></li>
-                    <li><a href="#" title="">虚位以待</a></li>
-                    <li><a href="#" title="">虚位以待</a></li>
-                    <li><a href="#" title="">虚位以待</a></li>
-                    <li><a href="#" title="">虚位以待</a></li>
-                </ul>
-            </div>
-        </div>
-        <!--end-->
-    </div>
-    <!--end  right-->
-    <div class="clear"></div>
+    <!--include bio-->
+    <?php $this->load->view('bio');?>
 </div>
 <!--content end-->
 <!--footer-->
-<div id="footer">
-    <p>Design by：Nova <?php echo date('Y-m-d');?></p>
-</div>
-<script type="text/javascript" src="<?php echo base_url();?>static/js/jquery1.42.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>static/js/jquery.SuperSlide.2.1.1.js"></script>
-<!--[if lt IE 9]>
-<script src="<?php echo base_url(); ?>static/js/html5.js"></script>
-<![endif]-->
-<script type="text/javascript">jQuery(".lanmubox").slide({easing:"easeOutBounce",delayTime:400});</script>
-<script type="text/javascript" src="<?php echo base_url();?>static/js/nav.js"></script>
-</body>
+<?php $this->load->view('footer');?></body>
 </html>

@@ -103,7 +103,7 @@ class Admin extends CI_Controller
      */
     public function article()
     {
-        $config['base_url'] = 'http://cc.com:89/admin/admin/article';
+        $config['base_url'] = 'http://codeigniter-3.1.11.bb/admin/admin/article';
         $config['total_rows'] = $this->db->get("article")->num_rows();
         $config['per_page'] = 8;
         $config['num_links'] = 100;
@@ -115,7 +115,7 @@ class Admin extends CI_Controller
 
     public function diaries()
     {
-        $config['base_url'] = 'http://cc.com:89/admin/admin/diaries';
+        $config['base_url'] = 'http://codeigniter-3.1.11.bb/admin/admin/diaries';
         $config['total_rows'] = $this->db->get("diaries")->num_rows();
         $config['per_page'] = 5;
         $config['num_links'] = 100;
@@ -127,7 +127,7 @@ class Admin extends CI_Controller
 
     public function tweets()
     {
-        $config['base_url'] = 'http://cc.com:89/admin/admin/tweets';
+        $config['base_url'] = 'http://codeigniter-3.1.11.bb/admin/admin/tweets';
         $config['total_rows'] = $this->db->get("tweets")->num_rows();
         $config['per_page'] = 10;
         $config['num_links'] = 100;
@@ -139,7 +139,7 @@ class Admin extends CI_Controller
 
     public function guestbook()
     {
-        $config['base_url'] = 'http://cc.com:89/admin/admin/guestbook';
+        $config['base_url'] = 'http://codeigniter-3.1.11.bb/admin/admin/guestbook';
         $config['total_rows'] = $this->db->get("guestbook")->num_rows();
         $config['per_page'] = 8;
         $config['num_links'] = 100;

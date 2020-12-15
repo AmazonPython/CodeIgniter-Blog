@@ -18,24 +18,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 
 <body id="tweets">
-<!--header start-->
-<div id="header">
-    <h1>某普通上班族的个人博客</h1>
-    <p id="slogan">就做一阵风吧，有温柔也有英勇。</p>
-    <div id="nav">
-        <ul>
-            <li><a id="block" href="<?php echo base_url('home/index');?>">首页</a></li>
-            <li><a id="block" href="<?php echo base_url('home/about');?>">关于我</a></li>
-            <li><a id="block" href="<?php echo base_url('home/tweets');?>">碎言碎语</a></li>
-            <li><a id="block" href="<?php echo base_url('home/diaries');?>">个人日记</a></li>
-            <li><a id="block" href="<?php echo base_url('home/photos');?>">相册展示</a></li>
-            <li><a id="block" href="<?php echo base_url('home/learn');?>">学无止境</a></li>
-            <li><a id="block" href="<?php echo base_url('home/guestbook');?>">留言板</a></li>
-            <div class="clear"></div>
-        </ul>
-    </div>
-</div>
-<!--header end-->
+<!--nav-->
+<?php $this->load->view('nav');?>
+<!--nav end-->
 <!--content start-->
 <div id="say">
     <div class="weizi">
@@ -53,17 +38,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <!--content end-->
 <!--footer-->
-<div id="footer">
-    <p>Design by：Nova <?php echo date('Y-m-d');?></p>
-</div>
-<script type="text/javascript" src="<?php echo base_url();?>static/js/jquery1.42.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>static/js/jquery.SuperSlide.2.1.1.js"></script>
-<!--[if lt IE 9]>
-<script src="<?php echo base_url(); ?>static/js/html5.js"></script>
-<![endif]-->
-
-<!--footer end-->
-<script type="text/javascript">jQuery(".lanmubox").slide({easing:"easeOutBounce",delayTime:400});</script>
-<script type="text/javascript" src="<?php echo base_url();?>static/js/nav.js"></script>
+<?php $this->load->view('footer');?>
 </body>
 </html>
