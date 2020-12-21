@@ -36,9 +36,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <br />&nbsp&nbsp<?php echo $row['name']?>
                         &nbsp&nbsp&nbsp&nbsp<?php echo $row['date']?><br />
                         &nbsp&nbsp<?php echo $row['content']?><br /><br />
-                        <a><?php echo anchor('admin/admin/delete_guestbook/'.$row['id'],'删除留言')?></a>
+                        <a><?php echo anchor('admin/admin/delete_guestbook/' . $row['id'],'删除留言')?></a>
                         <a style="padding-left: 5%;">
-                            <?php echo anchor('admin/admin/reply/'.$row['id'], 'Reply');?>
+                            <?php echo anchor('admin/admin/reply/' . $row['id'], 'Reply');?>
                         </a><br /><br />
                     </font>
                 </h3>

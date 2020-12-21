@@ -39,8 +39,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <span class="left author">Nova</span>
                                 <span class="left sj">时间：<?php echo $row->date;?></span>
                                 <span class="left fl">分类：<?php echo $row->type;?></span>
-                                <a><?php echo anchor('admin/admin/edit_article/'.$row->id,'更新文章')?></a>
-                                <a><?php echo anchor('admin/admin/delete_article/'.$row->id,'删除文章')?></a>
+                                <a><?php echo anchor('admin/admin/edit_article/' . $row->id,'更新文章')?></a>
+                                <a><?php echo anchor('admin/admin/delete_article/' . $row->id,'删除文章')?></a>
                             <div class="clear"></div>
                             </p>
                         </dd>

@@ -40,10 +40,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
                     <a style="padding-left: 3%"><?php echo $row['date']?></a>
                     <a style="padding-left: 45%;">
-                        <?php echo anchor('admin/admin/edit_diaries/'.$row['id'],'更新日记')?>
+                        <?php echo anchor('admin/admin/edit_diaries/' . $row['id'],'更新日记')?>
                     </a>
                     <a style="padding-left: 5%;">
-                        <?php echo anchor('admin/admin/delete_diaries/'.$row['id'],'删除日记')?>
+                        <?php echo anchor('admin/admin/delete_diaries/' . $row['id'],'删除日记')?>
                     </a>
                 <div class="clear"></div>
             </div>

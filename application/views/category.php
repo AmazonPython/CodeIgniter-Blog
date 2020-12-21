@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Nova's blog - 学无止境</title>
+    <title>Nova's blog - 文章分类</title>
     <meta name="msvalidate.01" content="" />
     <meta name="baidu-site-verification" content="" />
     <meta name="author" content="LunaNova">
@@ -26,31 +26,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--left-->
     <div class="left" id="learn">
         <div class="weizi">
-            <div class="wz_text">当前位置：首页><h1>学无止境</h1></div>
+            <div class="wz_text">当前位置：首页><h1>文章分类</h1></div>
         </div>
         <div class="content_text">
             <!--wz--><?php if (isset($rows)) { foreach ($rows as $row):?>
             <div class="wz">
-                <h3><?php echo $row['title'];?></h3>
-                <dl>
-                    <dt><img src="<?php echo base_url();?>static/images/s2.jpg" width="200" height="123" alt="文章图片"></dt>
-                    <dd>
-                        <p class="dd_text_1"><?php echo $row['content'];?></p>
-                        <p class="dd_text_2">
-                            <span class="left author">Nova</span>
-                            <span class="left sj">时间：<?php echo $row['date'];?></span>
-                            <span class="left fl">分类：<?php echo $row['type'];?></span>
-                            <span class="left yd">
-                                <?php echo anchor('home/article/' . $row['id'] .'-'. str_replace(' ', '-', $row['title']),'阅读全文','class="ReadMore"')?>
-                            </span>
-                        <div class="clear"></div>
-                        </p>
-                    </dd>
-                    <div class="clear"></div>
-                </dl>
+                <h3>
+                    <span class="left fl">&nbsp&nbsp类别：<?php echo $row->type;?>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+                    <span class="left yd">
+                        <?php echo anchor('home/category_details/' . $row->type,'点击阅读','class="ReadMore"')?>
+                    </span>
+                </h3>
+                <br />
             </div>
-            <!--wz end--><?php endforeach;}?><br />&nbsp&nbsp
-            <font color="blue" size="4"><?php echo $this->pagination->create_links();?></font>
+            <!--wz end--><?php endforeach;}?>
         </div>
     </div>
     <!--end left -->

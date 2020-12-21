@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <li><a href="<?php echo base_url('home/tweets');?>">碎言碎语</a></li>
         <li><a href="<?php echo base_url('home/diaries');?>">个人日记</a></li>
         <li><a href="<?php echo base_url('home/photos');?>">相册展示</a></li>
-        <li><a href="<?php echo base_url('home/learn');?>">学无止境</a></li>
+        <li><a href="<?php echo base_url('home/category');?>">文章分类</a></li>
         <li><a href="<?php echo base_url('home/guestbook');?>">留言板</a></li>
         <div class="clear"></div>
     </ul>

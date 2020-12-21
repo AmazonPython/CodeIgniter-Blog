@@ -9,13 +9,13 @@ class Home_model extends CI_Model{
         $this->load->database();//加载数据库
     }
 
-    public function home()
+    public function home($config)
     {
         //$query = $this->db->query('select * from article order by id desc limit 0,8');//加载数据表
 
         //调用article表,按id倒序排列并显示8条数据
-        $data = $this->db->from('article')->order_by('id', 'desc')->limit(8)->get();
-        return $data->result();
+        $data = $this->db->order_by('id', 'desc')->get('article', $config['per_page'], $this->uri->segment(3));
+        return $data->result();//单结果标准查询（对象形式）
     }
 
     public function article($id)
@@ -26,14 +26,14 @@ class Home_model extends CI_Model{
 
     public function tweets($config)
     {
-        $query = $this->db->order_by('id', 'desc')->get('tweets', $config['per_page'], $this->uri->segment(3));
-        return $query->result_array();
+        $data = $this->db->order_by('id', 'desc')->get('tweets', $config['per_page'], $this->uri->segment(3));
+        return $data->result_array();//单结果标准查询（数组形式）
     }
 
     public function diaries($config)
     {
-        $query = $this->db->get('diaries', $config['per_page'], $this->uri->segment(3));
-        return $query->result_array();
+        $data = $this->db->get('diaries', $config['per_page'], $this->uri->segment(3));
+        return $data->result_array();
     }
 
     public function diaries_details($id)//日记详情
@@ -42,16 +42,22 @@ class Home_model extends CI_Model{
         return $data->result_array()[0];
     }
 
-    public function learn($config)
+    public function category()
     {
-        $query = $this->db->get('article', $config['per_page'], $this->uri->segment(3));
-        return $query->result_array();
+        $data = $this->db->group_by('type')->get('article');
+        return $data->result();
+    }
+
+    public function category_details($config, $type)//分类详情
+    {
+        $data =  $this->db->where('type=', $type)->get('article', $config['per_page'], $this->uri->segment(4));
+        return $data->result();
     }
 
     public function guestbook($config)
     {
-        $query = $this->db->get('guestbook', $config['per_page'], $this->uri->segment(3));
-        return $query->result_array();
+        $data = $this->db->get('guestbook', $config['per_page'], $this->uri->segment(3));
+        return $data->result_array();
     }
 
     public function message($name, $content, $date)

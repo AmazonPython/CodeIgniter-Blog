@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="wrap">
     <div class="container">
         <h1 style="margin: 0; text-align: center;"><font>Hi, Nova 👋</font></h1>
-        <form action="<?php echo base_url('admin/admin/update_article/'.$article->id);?>" method="post">
+        <form action="<?php echo base_url('admin/admin/update_article/' . $article->id);?>" method="post">
 
             <label><input type="text" name="title" placeholder="title" value="<?php echo $article->title;?>"/></label>
 

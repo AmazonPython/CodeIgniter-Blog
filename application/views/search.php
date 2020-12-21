@@ -23,8 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--content start-->
 <div id="content">
     <!--left-->
-    <div class="left" id="learn"><?php foreach($rows as $row){ ?>
+    <div class="left" id="learn">
         <div class="content_text">
+            <?php foreach($rows as $row){ ?>
             <div class="article-title">
                 <h1><?php echo $row->title;?></h1>
             </div>
@@ -33,7 +34,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="article-content">
                 <p><?php echo $row->content;?></p>
             </div>
-        </div><?php } ?>
+            <?php } ?>
+        </div>
     </div>
     <!--end left -->
     <!--right-->

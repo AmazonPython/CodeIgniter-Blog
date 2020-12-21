@@ -14,7 +14,13 @@ class Home extends CI_Controller
 
     public function index()//index公共函数，主页
     {
-        $data['rows'] = $this->home_model->home();//调用home_model模型home类
+        $config['base_url'] = 'http://codeigniter-3.1.11.bb/home/index';//输出分页链接
+        $config['total_rows'] = $this->db->get("article")->num_rows();
+        $config['per_page'] = 8;
+        $config['num_links'] = 100;
+        $this->pagination->initialize($config);
+
+        $data['rows'] = $this->home_model->home($config);//调用home_model模型home类
         $this->load->view('home', $data);//加载视图
     }
 
@@ -31,7 +37,7 @@ class Home extends CI_Controller
 
     public function tweets()
     {
-        $config['base_url'] = 'http://codeigniter-3.1.11.bb/home/tweets';//输出分页链接
+        $config['base_url'] = 'http://codeigniter-3.1.11.bb/home/tweets';
         $config['total_rows'] = $this->db->get("tweets")->num_rows();
         $config['per_page'] = 10;
         $config['num_links'] = 100;
@@ -64,16 +70,23 @@ class Home extends CI_Controller
         $this->load->view('photos');
     }
 
-    public function learn()
+    public function category()
     {
-        $config['base_url'] = 'http://codeigniter-3.1.11.bb/home/learn';
+        $data['rows'] = $this->home_model->category();
+        $this->load->view('category', $data);
+    }
+
+    public function category_details($type)
+    {
+        $config['base_url'] = 'http://codeigniter-3.1.11.bb/home/category_details/' . $type;
         $config['total_rows'] = $this->db->get("article")->num_rows();
         $config['per_page'] = 8;
         $config['num_links'] = 100;
+
         $this->pagination->initialize($config);
 
-        $data['rows'] = $this->home_model->learn($config);
-        $this->load->view('learn', $data);
+        $data['rows'] = $this->home_model->category_details($config, $type);
+        $this->load->view('category_details', $data);
     }
 
     public function guestbook()
