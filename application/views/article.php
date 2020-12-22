@@ -30,6 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
                 <a class="article-time">时间：<?php echo $rows->date;?></a>
                 <a class="article-type">分类：<?php echo $rows->type;?></a>
+                <strong>服务器君耗时 {elapsed_time} 秒，内存消耗 {memory_usage}</strong>
             <div class="article-content">
                 <p><?php echo $rows->content;?></p>
             </div>
