@@ -81,7 +81,7 @@ class Admin_model extends CI_Model{
 
     public function diaries($config)
     {
-        $data = $this->db->get('diaries', $config['per_page'], $this->uri->segment(4));
+        $data = $this->db->order_by('id', 'desc')->get('diaries', $config['per_page'], $this->uri->segment(4));
         return $data->result_array();
     }
 

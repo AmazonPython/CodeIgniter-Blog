@@ -32,7 +32,7 @@ class Home_model extends CI_Model{
 
     public function diaries($config)
     {
-        $data = $this->db->get('diaries', $config['per_page'], $this->uri->segment(3));
+        $data = $this->db->order_by('id', 'desc')->get('diaries', $config['per_page'], $this->uri->segment(3));
         return $data->result_array();
     }
 
