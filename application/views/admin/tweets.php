@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <?php if (isset($rows)) { foreach ($rows as $row): ?>
         <ul class="say_box">
             <div class="sy">
-                <p><?php echo $row['content']?></p>
+                <div><?php echo $row['content']?></div>
                 <a><?php echo anchor('admin/admin/edit_tweets/' . $row['id'],'更新说说')?></a>
                 <a><?php echo anchor('admin/admin/delete_tweets/' . $row['id'],'删除说说')?></a>
             </div>

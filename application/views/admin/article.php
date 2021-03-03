@@ -34,7 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <dl>
                         <dt><img src="<?php echo base_url();?>static/images/s2.jpg" width="200" height="123" alt="文章图片"></dt>
                         <dd>
-                            <p class="dd_text_1"><?php echo $row->content;?></p>
+                            <div class="dd_text_1"><?php echo $row->content;?></div>
                             <p class="dd_text_2">
                                 <span class="left author">Nova</span>
                                 <span class="left sj">时间：<?php echo $row->date;?></span>

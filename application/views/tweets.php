@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <?php if (isset($rows)) { foreach ($rows as $row): ?>
     <ul class="say_box">
         <div class="sy">
-            <p><?php echo $row['content']?></p>
+            <div><?php echo $row['content']?></div>
         </div>
         <span class="dateview"><?php echo $row['date']?></span>
     </ul>

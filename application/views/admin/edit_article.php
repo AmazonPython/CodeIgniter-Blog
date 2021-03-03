@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             <label><input type="text" name="title" placeholder="title" value="<?php echo $article->title;?>"/></label>
 
-            <textarea class="add" type="text" name="content" placeholder="content"><?php echo $article->content?></textarea>
+            <textarea id="image-tools" class="add" type="text" name="content" placeholder="content"><?php echo $article->content?></textarea>
 
             <label><input type="text" name="type" placeholder="type" value="<?php echo $article->type?>"/></label>
 
@@ -44,5 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <li></li>
     </ul>
 </div>
+<!--footer-->
+<?php $this->load->view('admin/footer');?>
 </body>
 </html>

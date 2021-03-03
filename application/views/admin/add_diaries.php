@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <a href="<?= base_url('admin/admin/logout')?>">登出</a>
 
         <form action="<?php echo base_url('admin/admin/add_diaries');?>" method="post">
-            <textarea class="add" type="text" name="content" placeholder="个人日记"></textarea>
+            <textarea id="image-tools" class="add" type="text" name="content" placeholder="个人日记"></textarea>
 
             <label><input type="text" name="date" placeholder="date" value="<?php echo date('Y-m-d');?>"/></label>
 
@@ -43,5 +43,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <li></li>
     </ul>
 </div>
+<!--footer-->
+<?php $this->load->view('admin/footer');?>
 </body>
 </html>

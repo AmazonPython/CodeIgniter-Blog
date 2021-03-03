@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <h1 style="margin: 0; text-align: center;"><font>Hi, Nova 👋</font></h1>
         <form action="<?php echo base_url('admin/admin/update_diaries/' . $diaries->id);?>" method="post">
 
-            <textarea class="add" type="text" name="content" placeholder="content"><?php echo $diaries->content?></textarea>
+            <textarea id="image-tools" class="add" type="text" name="content" placeholder="content"><?php echo $diaries->content?></textarea>
 
             <label><input type="text" name="date" placeholder="date" value="<?php echo date('Y-m-d');?>"/></label>
 
@@ -40,5 +40,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <li></li>
     </ul>
 </div>
+<!--footer-->
+<?php $this->load->view('admin/footer');?>
 </body>
 </html>

@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <form action="<?php echo base_url('admin/admin/add_article');?>" method="post">
             <label><input type="text" name="title" placeholder="title"/></label>
 
-            <textarea class="add" type="text" name="content" placeholder="学无止境"></textarea>
+            <textarea id="image-tools" class="add" type="text" name="content" placeholder="学无止境"></textarea>
 
             <label><input type="text" name="type" placeholder="type"/></label>
 
@@ -47,5 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <li></li>
     </ul>
 </div>
+<!--footer-->
+<?php $this->load->view('admin/footer');?>
 </body>
 </html>
