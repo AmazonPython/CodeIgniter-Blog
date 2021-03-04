@@ -80,7 +80,7 @@ class Home_model extends CI_Model{
 
     function search($keyword)
     {
-        $data = $this->db->from('article')->like('title', $keyword)->or_like('content', $keyword)->get();
+        $data =  $this->db->like('title', $keyword)->or_like('content', $keyword)->get('article');
         return $data->result();
     }
 }

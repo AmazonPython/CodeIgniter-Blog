@@ -123,6 +123,7 @@ class Home extends CI_Controller
     function search()//搜索功能
     {
         $keyword = $this->input->post('keyword');
+
         $data['rows'] = $this->home_model->search($keyword);
         $this->load->view('search', $data);
     }
