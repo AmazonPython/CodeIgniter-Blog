@@ -1,5 +1,5 @@
 #home {
-    margin: 40px;
+    margin: 20px;
     background-color: #E3D8BC;
     background-image: url(../images/bg.png);
     background-position: bottom right, top;
@@ -9,7 +9,7 @@
 }
 
 #about {
-    margin: 40px;
+    margin: 20px;
     background-color: #FFF0D3;
     background-image: url(../images/shine.jpg);
     background-position: bottom right, top;
@@ -19,7 +19,7 @@
 }
 
 #tweets {
-    margin: 40px;
+    margin: 20px;
     background-color: #5A7BA6;
     background-image: url(../images/stich.jpg);
     background-position: bottom right, top;
@@ -29,7 +29,7 @@
 }
 
 #diaries {
-    margin: 40px;
+    margin: 20px;
     background-color: white;
     background-image: url(../images/meow.jpg);
     background-position: bottom left, top;
@@ -39,7 +39,7 @@
 }
 
 #learnjourney {
-     margin: 40px;
+     margin: 20px;
      background-color: #E4E0D5;
      background-image: url(../images/InkCat.jpg);
      background-size: contain;
@@ -50,7 +50,7 @@
  }
 
 #guestbook-color {
-     margin: 40px;
+     margin: 20px;
      background-image: url(../images/Alice.jpg);
      background-size: 100% 100%;
      background-repeat: no-repeat;

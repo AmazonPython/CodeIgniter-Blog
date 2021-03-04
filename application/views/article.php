@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="icon" href="<?php echo base_url();?>static/images/favicon/favicon.ico">
 </head>
 
-<body>
+<body style="margin: 20px;">
 <!--nav-->
 <?php $this->load->view('nav');?>
 <!--nav end-->
