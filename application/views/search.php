@@ -25,6 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--left-->
     <div class="left" id="learn">
         <div class="content_text">
+        	<?php if ($rows) {?>
             <?php foreach($rows as $row){ ?>
             <div class="article-title">
                 <h1><?php echo $row->title;?></h1>
@@ -35,7 +36,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="article-content">
                 <p><?php echo $row->content;?></p>
             </div>
-            <?php } ?>
+            <?php } }else{?>
+            <?php echo '<div class="article-title">' . '<h1>' . '服务器君暂时没有找到结果，请稍后再来。' . '</h1>' . '</div>';} ?>
         </div>
     </div>
     <!--end left -->

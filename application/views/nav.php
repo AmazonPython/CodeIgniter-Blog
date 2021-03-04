@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <table bgcolor="#FFFFFF">
             <tr>
                 <td>
-                    <input type=text name=keyword size=11 value="" placeholder="输入关键字">
+                    <input type=text name=keyword size=11 value="" placeholder="输入关键字" required/>
                     <input type=hidden name=ie value=UTF8>
                     <input type=hidden name=oe value=UTF8>
                     <input type=hidden name=hl value=zh-CN>
