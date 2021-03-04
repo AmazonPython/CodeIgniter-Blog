@@ -44,6 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <p><a href="https://github.com/AmazonPython"><font color="red">github地址</font></a></p>
         <p>邮箱：amazon3@foxmail.com</p>
     </div>
+    <a href="#content" style="position: fixed;font-size: 24px">⬆️Top</a>
 </div>
 <!--end  right-->
 <div class="clear"></div>
