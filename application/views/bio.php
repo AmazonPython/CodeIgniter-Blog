@@ -42,7 +42,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="link">
         <h2>联系博主</h2>
         <p><a href="https://github.com/AmazonPython"><font color="red">github地址</font></a></p>
-        <p>邮箱：amazon3@foxmail.com</p>
+        <p>邮箱地址：复制以下代码到命令行终端
+            <code>echo J2FtYXpvbjNAZm94bWFpbC5jb20nIA0K | base64 -d</code>
+        </p>
     </div>
     <a href="#content" style="position: fixed;font-size: 24px">⬆️Top</a>
 </div>
