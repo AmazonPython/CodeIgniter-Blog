@@ -23,7 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--content start-->
 <div id="content_xc">
     <div class="weizi">
-        <div class="wz_text">当前位置：首页><h1>相册展示</h1></div>
+        <div class="wz_text">
+            当前位置：首页><font color="red">相册展示</font>
+        </div>
     </div>
     <div class="xc_content">
         <div class="con-bg">

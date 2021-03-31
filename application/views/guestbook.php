@@ -26,9 +26,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--left-->
     <div class="left" id="c_left">
         <div class="weizi">
-            <div class="wz_text">当前位置：首页><h1>留言板</h1></div>
+            <div class="wz_text">
+                当前位置：首页><font color="red">留言板</font>
+            </div>
         </div>
-
         <div class="g_content">
             有什么想对我说的嘛？&nbsp&nbsp<a href="<?php echo base_url('home/message');?>">给我留言</a>
             <?php if (isset($rows)) { foreach ($rows as $row):?>

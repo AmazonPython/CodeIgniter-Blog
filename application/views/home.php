@@ -5,6 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nova's blog - 某普通上班族的博客</title>
     <meta name="google-site-verification" content="" />
     <meta name="baidu-site-verification" content="" />

@@ -26,7 +26,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--left-->
     <div class="left" id="about_me">
         <div class="weizi">
-            <div class="wz_text">当前位置：首页><h1>关于我</h1></div>
+            <div class="wz_text">
+                当前位置：首页><font color="red">关于我</font>
+            </div>
         </div>
         <div class="about_content">
             博主是一个草根站长，喜欢研究web技术，也喜欢和每个友好的人做朋友。有点害羞，不常说话。(*/ω＼*)

@@ -26,7 +26,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--left-->
     <div class="left" id="learn">
         <div class="weizi">
-            <div class="wz_text">当前位置：首页><h1>文章分类</h1></div>
+            <div class="wz_text">
+                当前位置：首页><font color="red">文章分类</font>
+            </div>
         </div>
         <div class="content_text">
             <!--wz--><?php if (isset($rows)) { foreach ($rows as $row):?>
