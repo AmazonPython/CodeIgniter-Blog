@@ -1,4 +1,4 @@
-<script src="https://cdn.tiny.cloud/1/bxj3r4iu38vnskv5rgln7oq5kpbeaa61dr2q6ajfp5bg4rxh/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
     tinymce.init({
         selector: 'textarea#image-tools',
