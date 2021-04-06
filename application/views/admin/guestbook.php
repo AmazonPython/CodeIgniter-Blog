@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--content start-->
 <div id="content">
     <!--left-->
-    <div class="left" id="c_left">
+    <div class="left" id="guestbook">
         <div class="weizi">
             <div class="wz_text">当前位置：首页><h1>留言板</h1></div>
         </div>

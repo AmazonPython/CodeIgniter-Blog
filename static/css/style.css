@@ -97,8 +97,8 @@ span.bds_more{line-height:16px !important;}
     background:url("../images/tx.jpg") 5px 9px no-repeat;padding-left:25px;margin-left:20px;}
 #news .news_content .news_text{width:710px;}
 /*留言板*/
-#content #guestbook{width:730px;height:500px;background:#fff;}
-#guestbook .g_content{width:710px;height:300px;margin-top:10px;padding:0 10px;}
+#content #guestbook{width:730px;background:#fff;}
+#guestbook .g_content{width:710px;margin-top:10px;padding:0 10px;}
 
 /*Article*/
 .article-title{text-align: center;margin-top:10px;padding: 20px;}
