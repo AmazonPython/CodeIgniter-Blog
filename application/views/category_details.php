@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="google-site-verification" content="" />
     <meta name="baidu-site-verification" content="" />
     <meta name="author" content="LunaNova">
-    <meta name="keywords" content="Luna, Nova, Learning journey"/>
+    <meta name="keywords" content="Luna, Nova, LunaNova, Learning journey"/>
     <meta name="description" content="普通上班族的学习之旅，学习各种好玩有趣的东西ฅ( ＞ω＜)ฅ"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/index.css"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/style.css"/>

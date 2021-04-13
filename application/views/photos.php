@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <title>Nova's blog - 相册展示</title>
     <meta name="msvalidate.01" content="" />
     <meta name="baidu-site-verification" content="" />
-    <meta name="keywords" content="Luna, Nova, Photos, What's past is prologue, 凡是过往，皆为序章"/>
+    <meta name="keywords" content="Luna, Nova, LunaNova, Photos, What's past is prologue, 凡是过往，皆为序章"/>
     <meta name="description" content="普通上班族的图片，凡是过往，皆为序章。(★≧▽^))★☆"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/index.css"/>
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/style.css"/>
