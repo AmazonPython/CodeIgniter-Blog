@@ -20,6 +20,8 @@ img{display:block;border:0px;}
     width:730px;height:500px;background-color:#fff;background-size: 100% 90%;
 }
 #about_me .about_content{width:710px;height:300px;margin-top:10px;padding:0 10px;}
+#about_me .about_content a{background-color: black;color: black}
+#about_me .about_content a:hover{background-color: black;color: white}
 /*碎言碎语*/
 #say{width:950px;margin:5px auto;}
 #say .weizi{width:920px;height:28px;line-height:28px; background:url("../images/weizi.png") 7px 5px no-repeat; background-color:#fff;border-radius:3px;}
