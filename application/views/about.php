@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="about_content">
             <big>
-                我的名字叫<a href="" title="Nova">Nova</a>，今年<a href="" title="其实只有二十四岁"><del>33岁</del></a>。
+                我的名字叫<a href="" title="Nova">Nova</a>，今年<a href="" title="其实只有二十四岁(*/ω＼*)"><del>33岁</del></a>。
                 住在<a href="" title="广州市白云机场一带">广州市白云机场</a>一带 ，未婚，是一名普通上班族。
                 每天都要加班到晚上8点才能回家。我不抽烟，酒仅止于浅尝。晚上11点睡，每天要睡足8个小时。
                 睡前，我一定喝一杯温牛奶，然后做20分钟的柔软操。上了床，马上熟睡，一觉到天亮，决不把疲劳和压力留到第二天。
