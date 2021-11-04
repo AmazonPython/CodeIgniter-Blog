@@ -11,3 +11,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <script type="text/javascript" src="<?php echo base_url();?>static/js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript">jQuery(".lanmubox").slide({easing:"easeOutBounce",delayTime:400});</script>
 <script type="text/javascript" src="<?php echo base_url();?>static/js/nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.js" type="module" integrity="sha256-DdSiNPR71ROAVMqT6NiHagLAtZv9EHeByYuVxygZM5g="></script>
